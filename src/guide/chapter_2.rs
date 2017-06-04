@@ -71,4 +71,15 @@ Otherwise, you're now ready to use conrod!
 [rust getting started]:     https://doc.rust-lang.org/book/getting-started.html "Getting Started with Rust"
 [issue tracker]:            https://github.com/PistonDevelopers/conrod/issues   "Conrod issue tracker"
 
+## Using conrod in your project
+
+In `Cargo.toml` adds the dependencies as in the example below. The specified `features` must match the one required for the conrod back-end you use:
+
+```txt
+[dependencies]
+conrod = { version = "0.52.0", features = ["glium", "winit"] }
+glium="0.16.0"
+winit="0.5.9"  
+```
+
 */
